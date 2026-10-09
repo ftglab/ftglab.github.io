@@ -7,71 +7,71 @@
     <style>
         /* All design is hardcoded here, no external links or dependencies */
         body {
-            background-color: #f8fafc;
-            color: #334155;
-            font-family: system-ui, -apple-system, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            padding: 16px;
+            background-color: #f1f5f9; /* Sets the background of the entire viewport to a modern, soft light gray */
+            color: #334155;            /* Sets the default text color to a dark slate gray for soft contrast */
+            font-family: system-ui, -apple-system, sans-serif; /* Uses the clean, modern native system font of the device */
+            min-height: 100vh;         /* Forces the body to take up at least 100% of the screen height */
+            display: flex;             /* Activates Flexbox layout tools to align child elements easily */
+            align-items: center;       /* Centers the card vertically on the screen */
+            justify-content: center;    /* Centers the card horizontally on the screen */
+            margin: 0;                 /* Removes the default browser margin around the outer edge of the page */
+            padding: 16px;             /* Adds spacing around the card so it doesn't touch the screen borders on mobile */
         }
         .card {
-            max-width: 640px;
-            width: 100%;
-            background-color: #F9FAFB;
-            border-radius: 24px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            border: 1px solid #f1f5f9;
-            overflow: hidden;
+            max-width: 640px;          /* Prevents the card from stretching wider than 640 pixels on large screens */
+            width: 100%;               /* Allows the card to shrink and fill the width responsively on smaller mobile screens */
+            background-color: #ffffff; /* Sets the container background to pure white so it pops out against the gray page background */
+            border-radius: 24px;       /* Rounds the corners of the card heavily for a sleek, modern UI look */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05); /* Adds a subtle, multi-layered soft drop shadow for depth */
+            border: 1px solid #e2e8f0; /* Adds a very thin, light gray outer outline to cleanly define the card boundaries */
+            overflow: hidden;          /* Clips any inner content (like the top image) so it conforms to the card's rounded corners */
         }
         .header-image {
-            height: 192px;
-            background-color: #e2e8f0;
-            overflow: hidden;
+            height: 192px;             /* Locks the height of the image wrapper to exactly 192 pixels */
+            background-color: #e2e8f0; /* Provides a placeholder gray background while the actual image is loading */
+            overflow: hidden;          /* Enforces that any image overflow outside this container is hidden */
         }
         .header-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            width: 100%;               /* Forces the image to fill the entire width of its container */
+            height: 100%;              /* Forces the image to fill the entire height of its container */
+            object-fit: cover;         /* Crops and scales the image perfectly to fill the area without stretching or distorting it */
         }
         .content {
-            padding: 32px;
-            text-align: center;
+            padding: 32px;             /* Generates generous inner spacing inside the card around all the text elements */
+            text-align: center;        /* Centers all headings, paragraphs, and media inside this content area */
         }
         h1 {
-            font-size: 30px;
-            font-weight: 800;
-            color: #0f172a;
-            margin: 0 0 8px 0;
-            letter-spacing: -0.5px;
+            font-size: 30px;           /* Makes the main title large and prominent */
+            font-weight: 800;          /* Applies an extra-bold weight to the title text */
+            color: #0f172a;            /* Sets the title color to a deep, near-black slate blue for high readability */
+            margin: 0 0 8px 0;         /* Removes top/side margins and adds a small 8px space underneath the headline */
+            letter-spacing: -0.5px;    /* Tightens the spacing between characters slightly for a modern, high-end editorial look */
         }
         .profession {
-            color: #4f46e5;
-            font-weight: 600;
-            font-size: 18px;
-            margin: 0 0 24px 0;
+            color: #4f46e5;            /* Colors the subtitle text an eye-catching vivid indigo blue */
+            font-weight: 600;          /* Makes the subtitle text semi-bold so it stands out */
+            font-size: 18px;           /* Sets the badge text to a readable, intermediate font size */
+            margin: 0 0 24px 0;        /* Removes top/side margins and adds a 24px gap before the bio block */
         }
         .bio {
-            color: #475569;
-            line-height: 1.6;
-            margin-bottom: 32px;
+            color: #475569;            /* Gives the biography text a medium muted gray color */
+            line-height: 1.6;          /* Increases line height to make the paragraph easy and comfortable to read */
+            margin-bottom: 32px;       /* Adds a spacious gap beneath the bio description before the video container begins */
         }
         .video-container {
-            margin-bottom: 32px;
-            border-radius: 12px;
-            overflow: hidden;
-            background-color: #000000;
-            max-width: 384px;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+            margin-bottom: 32px;       /* Leaves a balanced gap at the bottom of the card content area */
+            border-radius: 12px;       /* Softly rounds the corners of the video module wrapper */
+            overflow: hidden;          /* Crops the video element corners to match the wrapper's rounded edge */
+            background-color: #000000; /* Sets a solid black backdrop behind the video element */
+            max-width: 384px;          /* Restricts the video player width so it doesn't overpower the layout */
+            margin-left: auto;         /* Works with margin-right auto to horizontally center the video inside the card */
+            margin-right: auto;        /* Works with margin-left auto to horizontally center the video inside the card */
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* Casts a tiny internal shadow to give the video frame subtle inset depth */
         }
         video {
-            width: 100%;
-            display: block;
-            aspect-ratio: 16 / 9;
+            width: 100%;               /* Ensures the native video player expands to fill its wrapper fully */
+            display: block;            /* Clears default inline spacing behaviors of media elements */
+            aspect-ratio: 16 / 9;      /* Locks the player into a standard widescreen presentation format */
         }
     </style>
 </head>
