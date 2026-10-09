@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Prezentace</title>
+    <!-- Tailwind CSS pro moderní vzhled -->
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-2xl w-full bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+        
+        <!-- Hlavní prezentační obrázek nebo GIF -->
+        <div class="h-48 bg-slate-200 overflow-hidden flex items-center justify-center">
+            <img id="uvodni-foto" src="https://unsplash.com" alt="Prezentace" class="w-full h-full object-cover">
+        </div>
+
+        <div class="p-8 text-center">
+            <h1 id="jmeno" class="text-3xl font-extrabold tracking-tight text-slate-950 mb-2">Jan Novák</h1>
+            <p id="profese" class="text-indigo-600 font-semibold text-lg mb-6">Webový designér & Vývojář</p>
+            
+            <div id="bio" class="text-slate-600 leading-relaxed mb-8">
+                Ahoj! Vítám tě na své osobní vizitce. Tuto stránku mohu kompletně upravovat přes mobil nebo prohlížeč bez toho, aniž bych musel sahat do kódu.
+            </div>
+
+            <!-- Malé ukázkové video -->
+            <div class="mb-8 rounded-xl overflow-hidden shadow-inner bg-black max-w-sm mx-auto">
+                <video id="prezentacni-video" controls class="w-full aspect-video">
+                    <source src="https://w3schools.com" type="video/mp4">
+                    Tvůj prohlížeč nepodporuje přehrávání videa.
+                </video>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
