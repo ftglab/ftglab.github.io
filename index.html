@@ -73,6 +73,19 @@
             display: block;            /* Clears default inline spacing behaviors of media elements */
             aspect-ratio: 16 / 9;      /* Locks the player into a standard widescreen presentation format */
         }
+        /* Style for the new email link at the very bottom */
+        .email-link {
+            display: inline-block;
+            color: #4f46e5;            /* Matches the vivid indigo blue from the profession text */
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.2s ease;
+        }
+        .email-link:hover {
+            color: #4338ca;            /* Darkens slightly when hovered for nice interactive feedback */
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -92,13 +105,16 @@
                 FEATURES GAMES LAB
             </div>
 
-<!-- Local video from your GitHub repository -->
-<div class="video-container">
-    <video id="presentation-video" autoplay loop muted playsinline controls>
-        <source src="video.webm" type="video/webm">
-        No video supported.
-    </video>
-</div>
+            <!-- Local video from your GitHub repository -->
+            <div class="video-container">
+                <video id="presentation-video" autoplay loop muted playsinline controls>
+                    <source src="video.webm" type="video/webm">
+                    No video supported.
+                </video>
+            </div>
+
+            <!-- New Email Section at the very bottom -->
+            <a href="mailto:info@ftglab.cz" class="email-link">info@ftglab.cz</a>
         </div>
     </div>
 
