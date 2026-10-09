@@ -48,7 +48,7 @@
             letter-spacing: -0.5px;    /* Tightens the spacing between characters slightly for a modern, high-end editorial look */
         }
         .profession {
-            color: #4f46e5;            /* Colors the subtitle text an eye-catching vivid indigo blue */
+            color: #475569;            /* Changed from vivid indigo to a muted dark slate gray */
             font-weight: 600;          /* Makes the subtitle text semi-bold so it stands out */
             font-size: 18px;           /* Sets the badge text to a readable, intermediate font size */
             margin: 0 0 24px 0;        /* Removes top/side margins and adds a 24px gap before the bio block */
@@ -73,17 +73,17 @@
             display: block;            /* Clears default inline spacing behaviors of media elements */
             aspect-ratio: 16 / 9;      /* Locks the player into a standard widescreen presentation format */
         }
-        /* Style for the new email link at the very bottom */
+        /* Style for the protected email link */
         .email-link {
             display: inline-block;
-            color: #4f46e5;            /* Matches the vivid indigo blue from the profession text */
+            color: #0f172a;            /* Changed to near-black color for a clean look */
             font-weight: 600;
             text-decoration: none;
             font-size: 16px;
             transition: color 0.2s ease;
         }
         .email-link:hover {
-            color: #4338ca;            /* Darkens slightly when hovered for nice interactive feedback */
+            color: #475569;            /* Changes to dark slate gray on hover */
             text-decoration: underline;
         }
     </style>
@@ -113,10 +113,13 @@
                 </video>
             </div>
 
-            <!-- New Email Section at the very bottom -->
-            <a href="mailto:info@ftglab.cz" class="email-link">info@ftglab.cz</a>
+            <!-- Protected Email Container -->
+            <div id="em-box"></div>
         </div>
     </div>
+
+    <!-- Script to inject email securely -->
+    <script>(function(){const u="info",d="ftglab.cz",e=u+"@"+d,a=document.createElement("a");a.href="mailto:"+e;a.className="email-link";a.textContent=e;document.getElementById("em-box").appendChild(a);})();</script>
 
 </body>
 </html>
