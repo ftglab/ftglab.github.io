@@ -1,0 +1,33 @@
+media:
+  input: images
+  output: /images
+  categories: [image, video]
+
+collections:
+  - name: Moje Vizitka
+    id: vizitka
+    type: file
+    path: index.html
+    format: html
+    fields:
+      - name: Celé jméno
+        id: jmeno
+        type: string
+        selector: '#jmeno'
+      - name: Profese / Zaměření
+        id: profese
+        type: string
+        selector: '#profese'
+      - name: Text o mně (Bio)
+        id: bio
+        type: text
+        selector: '#bio'
+      - name: Úvodní fotka nebo GIF
+        id: uvodni-foto
+        type: image
+        selector: '#uvodni-foto'
+      - name: Ukázkové video (.mp4)
+        id: prezentacni-video
+        type: file
+        selector: '#prezentacni-video source'
+        extensions: [.mp4, .webm]
